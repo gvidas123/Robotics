@@ -11,3 +11,4 @@ adafruit_GFX, SPI and MAX72xxPanel is used to control the led sccreen.
 The buttons control the dirrection the pixel at the bottome moves(player).
 the led is for debuggging purposes to know that the buttoons work as intended.
 everything else is just wiring so the screen works as intended.
+The code is in Robootics.ino file
