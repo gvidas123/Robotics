@@ -1,5 +1,4 @@
 #include <EEPROM.h>
-#include <arduino-timer.h>
 #include <Adafruit_GFX.h>
 #include <Max72xxPanel.h>
 #include <SPI.h>
