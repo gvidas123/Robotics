@@ -14,6 +14,9 @@ The buttons control the dirrection the pixel at the bottom moves(player).
 
 the led is for debuggging purposes to know that the buttoons work as intended.
 everything else is just wiring so the screen works as intended.
+
+![image](https://github.com/gvidas123/Robotics/assets/93709395/8f66902b-d1a6-4710-a0ad-c044af4b26cb)
+
 The code is in Robootics.ino file
 
 In the image: button_and_debug_led_wiring is shows how to wire the buttons and the led.
