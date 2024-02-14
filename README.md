@@ -13,4 +13,11 @@ the led is for debuggging purposes to know that the buttoons work as intended.
 everything else is just wiring so the screen works as intended.
 The code is in Robootics.ino file
 
-in the image button_and_debug_led_wiring is shows how to wire the buttons and the led
+In the image: button_and_debug_led_wiring is shows how to wire the buttons and the led.
+the buttons are connected to the third and fifth pin of the arduino board. they are also connected to power and ground through a resistor.
+the buttons allow the player to move left and right with the code of line 56 to 63.
+
+The led is connected to the ninth pin and is toggled on and of by both buttons wich allowws me to see if the buttons are wired properly.
+This is done using code from the 47 line to light up the pin and code 50 to 55 to change its states.
+
+and finally the led board 8x8 
