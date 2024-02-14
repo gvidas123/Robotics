@@ -8,7 +8,8 @@ EEPROM , Adafruit_GFX, Max72xxPanel, SPI.
 EEprom is used for saving information between games. 
 adafruit_GFX, SPI and MAX72xxPanel is used to control the led sccreen.
 
-The buttons control the dirrection the pixel at the bottome moves(player).
+The buttons control the dirrection the pixel at the bottom moves(player).
+![image](https://github.com/gvidas123/Robotics/assets/93709395/df28a815-d782-4cf2-94f8-216182aecba8)
 the led is for debuggging purposes to know that the buttoons work as intended.
 everything else is just wiring so the screen works as intended.
 The code is in Robootics.ino file
@@ -29,6 +30,5 @@ lines 100 to 106 reset the raindrops and make them random from wave 2 onwards.
 112 checks if the pixel alighn with the player pixel and if the wave has ended or not.
 123 to 133 checks if the wave has ended and sets random wall. it also lowers the delay so it would be harder to react in time.
 and finally the 134 line is the speed at witch the game is played.
-![image](https://github.com/gvidas123/Robotics/assets/93709395/8d27fdf1-4b9f-461a-bda5-520494b6b0b1)
 
 
