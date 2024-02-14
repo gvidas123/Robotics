@@ -20,4 +20,10 @@ the buttons allow the player to move left and right with the code of line 56 to 
 The led is connected to the ninth pin and is toggled on and of by both buttons wich allowws me to see if the buttons are wired properly.
 This is done using code from the 47 line to light up the pin and code 50 to 55 to change its states.
 
-and finally the led board 8x8 
+and finally the led board 8x8 its also connected to the ground with a resistor and has power just like the buttons,
+but it also has 3 diffrent wires going to arduino its connected to 10 11 and 13 pin.
+
+Now how the game works: lines 67 to 81 make the set pixels drop down at the speed of the delay witch at the end of the void loop.
+lines 100 to 106 reset the raindrops and make them random from wave 2 onwards. 84 to 90 is how i accualy draw the leds it just goes through the entire matrix
+and checks if a certain pixel is High or not. 82 to 90 is to check if the game ended in a win. 
+
