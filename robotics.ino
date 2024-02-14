@@ -14,6 +14,8 @@ volatile byte button = LOW;
 int Npreses = 0;
 int lol = 0;
 bool write = false;
+bool win = false;
+bool lose = false;
 volatile byte buttonState2 = LOW;
 volatile byte buttonState1 = LOW;
 int x = numberOfHorizontalDisplays * 8 / 2;
@@ -91,11 +93,14 @@ void loop() {
       }
     }
   }
-if (wait == 50 || trueend == true) {
+if (trueend == true) {
 
   for (int i = 0; i < 8;i++){
     for (int x = 0; x < 8;x++){
-      if (W[i][x] == 1) {
+      if (W[i][x] == 1 && win == true) {
+        matrix.drawPixel(i,x,HIGH);
+      }
+      if (L[i][x] == 1 && lose == true) {
         matrix.drawPixel(i,x,HIGH);
       }
     }
@@ -105,16 +110,26 @@ if (wait == 50 || trueend == true) {
 }
   bool ended = true;
   for (int i = 0; i < 8; i++){
+    if (raindropsy[i] == 0 && raindrops[i] == 1 && x = i) {
+      trueend = true;
+      lose = true;
+      
+    }
     if (raindrops[i] == 1) {
       ended = false;
     }
   }
+
 if (ended == true && trueend == false ) { 
   for(int x = 0; x < 8; x++) {
     int random = rand() % 8;
     raindrops[random] = 1;
   }
   wait -= 50;
+  if (wait <= 50 && trueend == false) {
+    trueend = true;
+    win = true;
+  }
 }
   delay(wait);  
 }
