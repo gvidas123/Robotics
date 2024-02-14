@@ -29,4 +29,6 @@ lines 100 to 106 reset the raindrops and make them random from wave 2 onwards.
 112 checks if the pixel alighn with the player pixel and if the wave has ended or not.
 123 to 133 checks if the wave has ended and sets random wall. it also lowers the delay so it would be harder to react in time.
 and finally the 134 line is the speed at witch the game is played.
+![image](https://github.com/gvidas123/Robotics/assets/93709395/8d27fdf1-4b9f-461a-bda5-520494b6b0b1)
+
 
