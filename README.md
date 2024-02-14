@@ -9,7 +9,9 @@ EEprom is used for saving information between games.
 adafruit_GFX, SPI and MAX72xxPanel is used to control the led sccreen.
 
 The buttons control the dirrection the pixel at the bottom moves(player).
+
 ![image](https://github.com/gvidas123/Robotics/assets/93709395/df28a815-d782-4cf2-94f8-216182aecba8)
+
 the led is for debuggging purposes to know that the buttoons work as intended.
 everything else is just wiring so the screen works as intended.
 The code is in Robootics.ino file
